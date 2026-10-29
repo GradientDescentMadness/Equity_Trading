@@ -8,9 +8,10 @@ A collection of quantitative, technical, and analytical tools for equity trading
 
 ```text
 Equity_Trading/
-├── Technical Dashboard for Trading/    # Multi-timeframe technical metrics scoring & charting dashboard
-│   ├── stock_Technicals_dashboard.py   # Main Streamlit application
-│   ├── nse_tickers.csv                 # Database of NSE tickers and company names
+├── Technical Dashboard for Trading/    # Multi-market technical metrics scoring & charting dashboard
+│   ├── stock_Technicals_dashboard.py   # Main Streamlit application (INDIA & USA tabs)
+│   ├── nse_tickers.csv                 # Database of NSE tickers, indices, and aliases
+│   ├── us_tickers.csv                  # Verified database of US indices, ETFs, and equities
 │   ├── et_req.txt                      # Module dependencies
 │   └── README.md                       # Comprehensive tool documentation
 ├── .gitignore                          # Global gitignore (ignores ppt/pptx, caches, etc.)
@@ -25,10 +26,13 @@ Equity_Trading/
 
 ### 1. [Technical Dashboard for Trading](./Technical%20Dashboard%20for%20Trading/)
 
-A TradingView-inspired, real-time and historical Technical Analysis & Metrics Scoring Dashboard tailored for Indian equities (NSE) and benchmark indices.
+A TradingView-inspired, real-time and historical Technical Analysis & Metrics Scoring Dashboard supporting both **Indian Equities (NSE)** and **US Equities (NYSE / NASDAQ)**.
 
-- **Interactive Search:** Auto-complete across all NSE stocks and benchmark indices (`NIFTY 50`, `BANKNIFTY`, `FINNIFTY`, etc.).
-- **Multi-Timeframe Support:** Intraday (`5m`, `15m`, `30m`, `1H`, `3H`) with smart 1-day session clipping (market open to current time, or previous full session on holidays/closed hours), and swing horizons (`1D`, `1W`) with selectable lookback periods (`7D` to `All`).
+- **Dual Market Tabs:**
+  - 🇮🇳 **INDIA:** Full support for Indian indices (`NIFTY 50`, `BANKNIFTY`, `FINNIFTY`, `MIDCPNIFTY`, `NIFTY IT`, etc.) and NSE equities, with `₹` currency and `Asia/Kolkata` market hours.
+  - 🇺🇸 **USA:** Full support for US indices (`S&P 500`, `Dow Jones`, `NASDAQ`, `Russell 2000`, `VIX`), major ETFs (`SPY`, `QQQ`, `IWM`, sector SPDRs), and leading stocks (`AAPL`, `NVDA`, `MSFT`, `TSLA`, etc.), with `$` currency and `America/New_York` market hours.
+- **Resilient Direct Feed:** High-speed crumb-free API with custom User-Agent to prevent Yahoo Finance HTTP 429 rate limits, plus automatic BSE fallback (`.BO`) and alias resolution for renamed/demerged tickers (`TATAMOTORS`, `ZOMATO`, `AMARAJABAT`, etc.).
+- **Multi-Timeframe Analysis:** Intraday (`5m`, `15m`, `30m`, `1H`, `3H`) with single-day session isolation, and swing horizons (`1D`, `1W`) with selectable lookback periods (`7D` to `All`).
 - **Clean TradingView Aesthetics:** High-contrast light UI, dual-colored SuperTrend ribbon (Teal for Bullish, Pink for Bearish), and rectangular badge markers for local swing peaks and troughs.
 - **Regime-Aware Metrics Scoring:** 10 core technical indicators evaluated under the prevailing SuperTrend regime to produce individual scores (1–5), weights, and an aggregate **Market Score** out of 10 (`Strong Bullish` to `Strong Bearish`).
 - **Inflection Points History:** Tabular history logging historical peaks and troughs with relative strength scores.

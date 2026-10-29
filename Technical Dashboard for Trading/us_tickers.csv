@@ -1,0 +1,165 @@
+SYMBOL,NAME
+^GSPC,S&P 500 Index
+^DJI,Dow Jones Industrial Average
+^IXIC,NASDAQ Composite
+^NDX,NASDAQ 100 Index
+^RUT,Russell 2000 Index
+^VIX,CBOE Volatility Index
+SPY,SPDR S&P 500 ETF Trust
+QQQ,Invesco QQQ Trust (NASDAQ 100)
+DIA,SPDR Dow Jones Industrial Average ETF
+IWM,iShares Russell 2000 ETF
+XLK,Technology Select Sector SPDR Fund
+XLF,Financial Select Sector SPDR Fund
+XLV,Health Care Select Sector SPDR Fund
+XLE,Energy Select Sector SPDR Fund
+XLI,Industrial Select Sector SPDR Fund
+XLY,Consumer Discretionary Select Sector SPDR
+XLP,Consumer Staples Select Sector SPDR Fund
+XLU,Utilities Select Sector SPDR Fund
+XLB,Materials Select Sector SPDR Fund
+VNQ,Vanguard Real Estate ETF
+SMH,VanEck Semiconductor ETF
+SOXX,iShares Semiconductor ETF
+GLD,SPDR Gold Shares
+SLV,iShares Silver Trust
+TLT,iShares 20+ Year Treasury Bond ETF
+AAPL,Apple Inc.
+MSFT,Microsoft Corporation
+NVDA,NVIDIA Corporation
+GOOGL,Alphabet Inc. (Class A)
+GOOG,Alphabet Inc. (Class C)
+AMZN,Amazon.com Inc.
+META,Meta Platforms Inc.
+TSLA,Tesla Inc.
+AVGO,Broadcom Inc.
+ORCL,Oracle Corporation
+CRM,Salesforce Inc.
+ADBE,Adobe Inc.
+AMD,Advanced Micro Devices Inc.
+QCOM,QUALCOMM Inc.
+INTC,Intel Corporation
+TXN,Texas Instruments Inc.
+MU,Micron Technology Inc.
+AMAT,Applied Materials Inc.
+LRCX,Lam Research Corporation
+KLAC,KLA Corporation
+ARM,Arm Holdings plc
+TSM,Taiwan Semiconductor Manufacturing
+ASML,ASML Holding N.V.
+NOW,ServiceNow Inc.
+PANW,Palo Alto Networks Inc.
+PLTR,Palantir Technologies Inc.
+SNOW,Snowflake Inc.
+UBER,Uber Technologies Inc.
+ABNB,Airbnb Inc.
+NFLX,Netflix Inc.
+CSCO,Cisco Systems Inc.
+IBM,International Business Machines
+INTU,Intuit Inc.
+SHOP,Shopify Inc.
+PYPL,PayPal Holdings Inc.
+COIN,Coinbase Global Inc.
+MSTR,MicroStrategy Inc.
+HOOD,Robinhood Markets Inc.
+SOFI,SoFi Technologies Inc.
+AFRM,Affirm Holdings Inc.
+DKNG,DraftKings Inc.
+CRWD,CrowdStrike Holdings Inc.
+NET,Cloudflare Inc.
+DDOG,Datadog Inc.
+ZS,Zscaler Inc.
+MDB,MongoDB Inc.
+JPM,JPMorgan Chase & Co.
+BAC,Bank of America Corporation
+WFC,Wells Fargo & Company
+C,Citigroup Inc.
+GS,The Goldman Sachs Group Inc.
+MS,Morgan Stanley
+BLK,BlackRock Inc.
+SCHW,The Charles Schwab Corporation
+AXP,American Express Company
+V,Visa Inc.
+MA,Mastercard Incorporated
+BRK-B,Berkshire Hathaway Inc. (Class B)
+CB,Chubb Limited
+PGR,The Progressive Corporation
+LLY,Eli Lilly and Company
+UNH,UnitedHealth Group Incorporated
+JNJ,Johnson & Johnson
+ABBV,AbbVie Inc.
+MRK,Merck & Co. Inc.
+PFE,Pfizer Inc.
+TMO,Thermo Fisher Scientific Inc.
+ABT,Abbott Laboratories
+DHR,Danaher Corporation
+BMY,Bristol-Myers Squibb Company
+AMGN,Amgen Inc.
+ISRG,Intuitive Surgical Inc.
+GILD,Gilead Sciences Inc.
+VRTX,Vertex Pharmaceuticals Incorporated
+REGN,Regeneron Pharmaceuticals Inc.
+MDT,Medtronic plc
+WMT,Walmart Inc.
+COST,Costco Wholesale Corporation
+HD,The Home Depot Inc.
+LOW,Lowe's Companies Inc.
+TGT,Target Corporation
+NKE,NIKE Inc.
+MCD,McDonald's Corporation
+SBUX,Starbucks Corporation
+BKNG,Booking Holdings Inc.
+CMG,Chipotle Mexican Grill Inc.
+TJX,The TJX Companies Inc.
+LULU,Lululemon Athletica Inc.
+ORLY,O'Reilly Automotive Inc.
+PG,The Procter & Gamble Company
+KO,The Coca-Cola Company
+PEP,PepsiCo Inc.
+PM,Philip Morris International Inc.
+MO,Altria Group Inc.
+CL,Colgate-Palmolive Company
+MDLZ,Mondelez International Inc.
+EL,The Estee Lauder Companies Inc.
+KMB,Kimberly-Clark Corporation
+GIS,General Mills Inc.
+XOM,Exxon Mobil Corporation
+CVX,Chevron Corporation
+COP,ConocoPhillips
+SLB,SLB (Schlumberger Limited)
+EOG,EOG Resources Inc.
+OXY,Occidental Petroleum Corporation
+MPC,Marathon Petroleum Corporation
+VLO,Valero Energy Corporation
+PSX,Phillips 66
+KMI,Kinder Morgan Inc.
+WMB,The Williams Companies Inc.
+GE,GE Aerospace
+CAT,Caterpillar Inc.
+DE,Deere & Company
+BA,The Boeing Company
+LMT,Lockheed Martin Corporation
+RTX,RTX Corporation
+HON,Honeywell International Inc.
+UNP,Union Pacific Corporation
+UPS,United Parcel Service Inc.
+FDX,FedEx Corporation
+ETN,Eaton Corporation plc
+WM,Waste Management Inc.
+DIS,The Walt Disney Company
+CMCSA,Comcast Corporation
+T,AT&T Inc.
+VZ,Verizon Communications Inc.
+TMUS,T-Mobile US Inc.
+F,Ford Motor Company
+GM,General Motors Company
+RIVN,Rivian Automotive Inc.
+LCID,Lucid Group Inc.
+LIN,Linde plc
+SHW,The Sherwin-Williams Company
+FCX,Freeport-McMoRan Inc.
+NEM,Newmont Corporation
+PLD,Prologis Inc.
+AMT,American Tower Corporation
+EQIX,Equinix Inc.
+O,Realty Income Corporation

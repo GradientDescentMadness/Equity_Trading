@@ -19,6 +19,23 @@ NIFTYPVTBANK,Nifty Private Bank
 NIFTYPSUBANK,Nifty PSU Bank
 SENSEX,BSE Sensex
 INDIAVIX,India VIX
+TMCV,Tata Motors Commercial Vehicles Limited
+TMPV,Tata Motors Passenger Vehicles Limited
+TATAMOTORS,Tata Motors (TMPV / TMCV)
+ETERNAL,Eternal Limited (formerly Zomato)
+ZOMATO,Zomato Limited (Eternal Limited)
+ARE&M,Amara Raja Energy & Mobility Limited
+AMARAJABAT,Amara Raja Energy & Mobility (formerly Batteries)
+AEGISLOG,Aegis Logistics Limited
+AEGISCHEM,Aegis Logistics (formerly Aegis Chemical)
+SUNDROP,Sundrop Brands Limited (formerly ATFL)
+ATFL,Agro Tech Foods (Sundrop Brands)
+LTF,L&T Finance Limited
+L&TFH,L&T Finance Limited (formerly LTFH)
+MOTHERSON,Samvardhana Motherson International Limited
+MOTHERSUMI,Samvardhana Motherson (formerly Motherson Sumi)
+ZYDUSLIFE,Zydus Lifesciences Limited
+CADILAHC,Zydus Lifesciences (formerly Cadila Healthcare)
 20MICRONS,20 Microns Limited
 21STCENMGM,21st Century Management Services Limited
 360ONE,360 ONE WAM LIMITED
@@ -66,7 +83,6 @@ ADROITINFO,Adroit Infotech Limited
 ADSL,Allied Digital Services Limited
 ADVANIHOTR,Advani Hotels & Resorts (India) Limited
 ADVENZYMES,Advanced Enzyme Technologies Limited
-AEGISCHEM,Aegis Logistics Limited
 AEROFLEX,Aeroflex Industries Limited
 AETHER,Aether Industries Limited
 AFFLE,Affle (India) Limited
@@ -106,7 +122,6 @@ ALOKINDS,Alok Industries Limited
 ALPA,Alpa Laboratories Limited
 ALPHAGEO,Alphageo (India) Limited
 ALPSINDUS,Alps Industries Limited
-AMARAJABAT,Amara Raja Batteries Limited
 AMBER,Amber Enterprises India Limited
 AMBICAAGAR,Ambica Agarbathies & Aroma industries Limited
 AMBIKCO,Ambika Cotton Mills Limited
@@ -182,7 +197,6 @@ ASTRAZEN,AstraZeneca Pharma India Limited
 ASTRON,Astron Paper & Board Mill Limited
 ATALREAL,Atal Realtech Limited
 ATAM,Atam Valves Limited
-ATFL,Agro Tech Foods Limited
 ATGL,Adani Total Gas Limited
 ATL,Allcargo Terminals Limited
 ATLANTA,Atlanta  Limited
@@ -986,7 +1000,6 @@ KSL,Kalyani Steels Limited
 KSOLVES,Ksolves India Limited
 KTKBANK,The Karnataka Bank Limited
 KUANTUM,Kuantum Papers Limited
-L&TFH,L&T Finance Holdings Limited
 LAGNAM,Lagnam Spintex Limited
 LAKPRE,Lakshmi Precision Screws Limited
 LAL,Lorenzini Apparels Limited
@@ -1137,7 +1150,6 @@ MONARCH,Monarch Networth Capital Limited
 MONTECARLO,Monte Carlo Fashions Limited
 MORARJEE,Morarjee Textiles Limited
 MOREPENLAB,Morepen Laboratories Limited
-MOTHERSON,Samvardhana Motherson International Limited
 MOTILALOFS,Motilal Oswal Financial Services Limited
 MOTOGENFIN,The Motor & General Finance Limited
 MPHASIS,MphasiS Limited
@@ -1729,7 +1741,6 @@ TATACONSUM,TATA CONSUMER PRODUCTS LIMITED
 TATAELXSI,Tata Elxsi Limited
 TATAINVEST,Tata Investment Corporation Limited
 TATAMETALI,Tata Metaliks Limited
-TATAMOTORS,Tata Motors Limited
 TATAMTRDVR,Tata Motors Limited
 TATAPOWER,Tata Power Company Limited
 TATASTEEL,Tata Steel Limited
@@ -1962,9 +1973,7 @@ ZFCVINDIA,ZF Commercial Vehicle Control Systems India Limited
 ZIMLAB,Zim Laboratories Limited
 ZODIAC,Zodiac Energy Limited
 ZODIACLOTH,Zodiac Clothing Company Limited
-ZOMATO,Zomato Limited
 ZOTA,Zota Health Care LImited
 ZUARI,Zuari Agro Chemicals Limited
 ZUARIIND,ZUARI INDUSTRIES LIMITED
-ZYDUSLIFE,Zydus Lifesciences Limited
 ZYDUSWELL,Zydus Wellness Limited

@@ -1,31 +1,35 @@
-# Stock Technicals Dashboard
+# Stock Technicals Dashboard (India & USA)
 
-A TradingView-inspired, real-time and historical Technical Analysis & Metrics Scoring Dashboard tailored for Indian equities (NSE) and benchmark indices. Built with **Streamlit**, **Plotly**, **yfinance**, and **pandas-ta**.
+A TradingView-inspired, real-time and historical Technical Analysis & Metrics Scoring Dashboard supporting both **Indian Equities (NSE)** and **US Equities (NYSE / NASDAQ)**. Built with **Streamlit**, **Plotly**, and **pandas-ta**.
 
 ---
 
 ## 🌟 Key Features
 
-- **Interactive Ticker Search:**
-  - Fast, auto-complete search across all National Stock Exchange (NSE) listed stocks and major indices (`NIFTY 50`, `BANKNIFTY`, `FINNIFTY`, `SENSEX`, `INDIAVIX`).
-  - Powered by a local symbol directory (`nse_tickers.csv`) mapping ticker symbols to full company names.
+- **Multi-Market Support via Dedicated Tabs:**
+  - 🇮🇳 **INDIA (NSE):** Dedicated tab for Indian benchmark indices (`NIFTY 50`, `BANKNIFTY`, `FINNIFTY`, `MIDCPNIFTY`, `NIFTY IT`, etc.) and all NSE-listed stocks, with currency formatting in `₹` and `Asia/Kolkata` market hours.
+  - 🇺🇸 **USA (NYSE / NASDAQ):** Dedicated tab for US benchmark indices (`S&P 500`, `Dow Jones`, `NASDAQ`, `Russell 2000`, `VIX`), major ETFs (`SPY`, `QQQ`, `IWM`, sector SPDRs), and top US equities (`AAPL`, `NVDA`, `MSFT`, `AMZN`, `TSLA`, etc.), formatted in `$` and `America/New_York` market hours.
+
+- **Resilient Direct Feed Architecture:**
+  - Integrated high-speed, crumb-free direct chart API with User-Agent management to bypass Yahoo Finance rate-limiting (HTTP 429) and cookie crumb errors.
+  - Automatic BSE fallback (`.BO`) for Indian stocks and alias resolution for demerged/renamed tickers (e.g. `TATAMOTORS` → `TMPV`, `ZOMATO` → `ETERNAL`, `AMARAJABAT` → `ARE&M`).
 
 - **Dynamic Timeframe & Horizon Control:**
-  - **Intraday Timeframes:** `5m`, `15m`, `30m`, `1H`, `3H` (resampled).
-  - **Swing Timeframes:** `1D`, `1W` (with up to 5 years of historical data).
-  - **Smart Session Management for Intraday:** Automatically bounds intraday data to the latest active trading session (IST) — from market open to current time, or the full previous session if the market is closed or on a holiday.
-  - **Horizon Filter for Daily/Weekly:** Quick lookback selection across `7D`, `15D`, `1M`, `3M`, `6M`, `1Y`, `5Y`, and `All`.
+  - **Intraday Intervals:** `5m`, `15m`, `30m`, `1H`, `3H` (resampled).
+  - **Swing Intervals:** `1D`, `1W` (with up to 5 years of historical data).
+  - **Intraday Session Isolation:** For intraday frequencies (< 1D), indicators are computed on full historical warm-up data, while the chart display is cleanly bounded to the latest active trading session.
+  - **Selectable Lookback Horizons:** When analyzing daily or weekly data, choose across `7D`, `15D`, `1M`, `3M`, `6M`, `1Y`, `5Y`, or `All`.
 
 - **TradingView-Inspired Minimalist Charting:**
-  - Clean, light-themed OHLC candlestick chart with crosshairs and right-aligned price scale.
-  - **Dual-Colored SuperTrend Ribbon:** Smooth trendline indicating market regime (Teal `#26a69a` for Bullish, Magenta/Pink `#e91e63` for Bearish).
-  - **Inflection Point Badges:** Clean rectangular badge markers with arrows pinpointing recent local swing peaks (red) and troughs (green) with local strength scores.
+  - High-contrast, clean light-mode candlestick chart with crosshairs and right-aligned price scale.
+  - **Dual-Colored SuperTrend Ribbon:** Smooth trendline indicating market regime (Teal `#26a69a` for Bullish, Magenta `#e91e63` for Bearish).
+  - **Inflection Point Badges:** Clean rectangular badge markers with directional arrows pinpointing recent local swing peaks (red) and troughs (green) with local strength scores.
   - Automatic weekend gap removal for daily/weekly charts.
 
 - **Regime-Aware Metrics Scoring Engine:**
-  - Analyzes 10 key technical indicators under the context of the current SuperTrend market regime.
-  - Evaluates signal direction (`Bullish`, `Bearish`, `Neutral`), individual strength scores (`1.0` – `5.0`), and assigned weights (`0.8` – `2.0`).
-  - Aggregates an **Overall Market Score** out of 10 with clear visual classifications:
+  - Evaluates 10 core technical indicators against the prevailing SuperTrend regime.
+  - Calculates signal direction (`Bullish`, `Bearish`, `Neutral`), individual strength scores (`1.0` – `5.0`), and assigned weights (`0.8` – `2.0`).
+  - Aggregates an **Overall Market Score** out of 10 with colored classifications:
     - 🟢 **Strong Bullish** / **Bullish**
     - ⚪ **Neutral / Mixed**
     - 🔴 **Bearish** / **Strong Bearish**
@@ -36,8 +40,6 @@ A TradingView-inspired, real-time and historical Technical Analysis & Metrics Sc
 ---
 
 ## 📊 Technical Indicators & Scoring Breakdown
-
-The metrics panel evaluates the following indicators in real time:
 
 | Indicator | Default Settings | Weight | Description & Scoring Highlights |
 | :--- | :--- | :---: | :--- |
@@ -57,54 +59,21 @@ The metrics panel evaluates the following indicators in real time:
 ## 🛠️ Project Structure
 
 ```text
-Equity_Trading/
-├── stock_Technicals_dashboard.py   # Main Streamlit dashboard application
-├── nse_tickers.csv                 # Master database of NSE tickers and company names
+Technical Dashboard for Trading/
+├── stock_Technicals_dashboard.py   # Multi-market Streamlit dashboard application
+├── nse_tickers.csv                 # Master database of NSE tickers, indices, and aliases
+├── us_tickers.csv                  # 100% verified database of US indices, ETFs, and stocks
 ├── et_req.txt                      # Python library dependencies
-├── .gitignore                      # Git ignore file (excludes ppt, pptx, caches, etc.)
-└── README.md                       # Documentation and usage guide
+└── README.md                       # Comprehensive documentation and usage guide
 ```
 
 ---
 
 ## 🚀 Installation & Setup
 
-### 1. Prerequisites
-- Python 3.10+ installed.
-
-### 2. Clone the Repository
 ```bash
-git clone https://github.com/GradientDescentMadness/Equity_Trading.git
-cd Equity_Trading
-```
-
-### 3. Install Dependencies
-Install all required libraries using `pip`:
-```bash
+cd "Technical Dashboard for Trading"
 pip install -r et_req.txt
-```
-
-*(Core dependencies: `streamlit`, `yfinance`, `pandas-ta`, `plotly`, `pandas`, `numpy`)*
-
-### 4. Run the Dashboard
-Launch the dashboard locally:
-```bash
 streamlit run stock_Technicals_dashboard.py
 ```
 Open your browser at `http://localhost:8501`.
-
----
-
-## ⚙️ Usage Guide
-
-1. **Search a Stock/Index:** Type ticker symbol or company name in the search box (e.g. `nift`, `RELIANCE`, `HDFCBANK`).
-2. **Choose Timeframe:** Select between intraday (`5m`, `15m`, `30m`, `1H`, `3H`) or swing horizons (`1D`, `1W`).
-3. **Select Lookback Window:** For daily/weekly data, toggle between `7D`, `15D`, `1M`, `3M`, `6M`, `1Y`, `5Y`, or `All`.
-4. **Inspect Metrics:** Review the live scoring breakdown on the right panel to assess market alignment across multiple indicators.
-5. **View Inflection History:** Inspect the table at the bottom to check historical swing highs and lows with their relative strength.
-
----
-
-## 📄 License
-This project is for personal analysis and educational purposes. Market data provided by Yahoo Finance.
-
